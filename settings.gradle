@@ -1,2 +1,21 @@
+// Repositorios para los plugins de Gradle (AGP, Kotlin, Compose)
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+// Repositorios para las librerías. jcenter() se eliminó: está cerrado
+// y Gradle 8 ya no lo permite.
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
 rootProject.name = "Proyecto Master Martini"
 include ':app'
