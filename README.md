@@ -4,7 +4,7 @@
 - Angel Cubillos
 - Francisca Rojas
 
-Docente: DIEGO PATRICIO CARES GONZALEZ · Asignatura: DSY1105 Desarrollo de Aplicaciones Móviles · CITT Duoc Antonio Varas
+Docente: DIEGO PATRICIO CARES GONZALEZ · Asignatura: DSY1105 Desarrollo de Aplicaciones Móviles · Duoc Antonio Varas
 
 ##TRELLO
 
@@ -52,7 +52,7 @@ Flujo: **UI (Compose) → ViewModel (estado + validación) → Repository → Ro
 - Android Studio (versión estable más reciente), JDK 17 o superior, Android SDK 36.
 - Dispositivo o emulador con Android 8.0 (API 26) o superior.
 
-1. Clona el repositorio: `git clone <poner url ola pone el url aaa>`
+1. Abre tu terminal (Git Bash, CMD, PowerShell o la terminal de Android Studio) y Clona el repositorio: `git clone <https://github.com/AngelCubillos-dev/Proyecto-Semestral-Moviles.git>` (tal cual)
 2. Abre la carpeta en Android Studio y espera la sincronización de Gradle.
 3. Selecciona un emulador o dispositivo y ejecuta el módulo `app`.
 4. Pruebas unitarias: `./gradlew test` (Windows: `gradlew.bat test`).
