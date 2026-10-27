@@ -17,5 +17,5 @@ data class VideoContent(
     val isLesson: Boolean
         get() = courseName != null && lessonPosition != null && totalLessons != null
 
-}   val isLastLesson: Boolean
-    get() = isLesson && lessonPosition == totalLessons
+    val isLastLesson: Boolean
+        get() = isLesson && lessonPosition == totalLessons}
