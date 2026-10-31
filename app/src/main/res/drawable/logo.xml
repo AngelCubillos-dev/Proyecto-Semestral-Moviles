@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logo provisional. Para usar el logo real, borra este archivo y agrega res/drawable/logo.png -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M48,4a44,44 0,1 1,0 88a44,44 0,1 1,0 -88z" />
+    <path
+        android:fillColor="#FFF8E1"
+        android:pathData="M22,66L22,30L34,30L48,50L62,30L74,30L74,66L64,66L64,46L48,66L32,46L32,66z" />
+</vector>
