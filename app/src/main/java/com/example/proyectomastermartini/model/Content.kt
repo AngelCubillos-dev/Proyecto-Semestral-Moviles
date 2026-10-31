@@ -1,4 +1,4 @@
-package com.example.mastermartini.model
+package com.example.proyectomastermartini.model
 
 import androidx.annotation.DrawableRes
 
@@ -31,5 +31,6 @@ data class ContentItem(
     val lessonIds: List<String> = emptyList(),
     val relatedVideoId: String? = null,
     val rawVideoName: String? = null,
-    val level: String = ""
+    val level: String = "",
+    val videoUrl: String? = null
 )

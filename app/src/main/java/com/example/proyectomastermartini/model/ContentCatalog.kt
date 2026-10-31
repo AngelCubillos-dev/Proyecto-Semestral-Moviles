@@ -1,6 +1,6 @@
-package com.example.mastermartini.model
+package com.example.proyectomastermartini.model
 
-import com.example.mastermartini.R
+import com.example.proyectomastermartini.R
 
 /**
  * Catálogo local con contenido ficticio para el MVP académico.
@@ -55,7 +55,7 @@ object ContentCatalog {
             title = "Empanadas de queso al horno",
             description = "Una preparación dorada y crujiente, con relleno de queso fundido para servir caliente.",
             meta = "50 min · 10 unidades",
-            imageRes = R.drawable.empanada,
+            imageRes = R.drawable.empanadas_queso,
             ingredients = listOf(
                 Ingredient("Harina", "300 g"), Ingredient("Mantequilla", "60 g"),
                 Ingredient("Agua tibia", "120 ml"), Ingredient("Queso mantecoso", "250 g"),
@@ -76,7 +76,7 @@ object ContentCatalog {
             title = "Brownie húmedo de chocolate",
             description = "Textura densa y húmeda, ideal para porciones de vitrina o para acompañar helado.",
             meta = "45 min · 9 porciones",
-            imageRes = R.drawable.chocolate,
+            imageRes = R.drawable.brownie,
             ingredients = listOf(
                 Ingredient("Chocolate cobertura", "200 g"), Ingredient("Mantequilla", "120 g"),
                 Ingredient("Azúcar", "150 g"), Ingredient("Huevos", "3 unidades"),
@@ -99,8 +99,11 @@ object ContentCatalog {
             meta = "3 h · 12 unidades",
             imageRes = R.drawable.bolleria,
             ingredients = listOf(
-                Ingredient("Harina de fuerza", "500 g"), Ingredient("Mantequilla para laminar", "250 g"),
-                Ingredient("Leche", "200 ml"), Ingredient("Azúcar", "60 g"), Ingredient("Levadura fresca", "20 g")
+                Ingredient("Harina de fuerza", "500 g"),
+                Ingredient("Mantequilla para laminar", "250 g"),
+                Ingredient("Leche", "200 ml"),
+                Ingredient("Azúcar", "60 g"),
+                Ingredient("Levadura fresca", "20 g")
             ),
             steps = listOf(
                 "Prepara la masa base con harina, leche, azúcar y levadura. Reposa en frío 1 hora.",
@@ -133,14 +136,15 @@ object ContentCatalog {
 
         // ---------------- VIDEOS TÉCNICOS ----------------
         ContentItem(
-            id = "video-templado",
+            id = "video-queque",
             type = ContentType.Video,
-            category = "Chocolatería",
-            title = "Introducción al templado de chocolate",
-            description = "Conoce las etapas del templado y aprende a reconocer un acabado brillante y uniforme.",
-            meta = "Chocolatería · 8 min",
-            imageRes = R.drawable.chocolate,
-            rawVideoName = "video_templado"
+            category = "Pastelería",
+            title = "Introducción al Queque Navideño",
+            description = "Aprende a preparar un queque navideño húmedo con sus frutos secos y frutas confitadas,ideal para vender en la temporada navideña.",
+            meta = "Pastelería · 12 min",
+            imageRes = R.drawable.queque,
+            rawVideoName = "video_queque",
+            videoUrl = "https://youtu.be/xoTHn4_-Fhs"
         ),
         ContentItem(
             id = "video-hojaldre",
@@ -150,40 +154,89 @@ object ContentCatalog {
             description = "Técnica paso a paso para lograr capas definidas y un horneado parejo.",
             meta = "Masas de hoja · 12 min",
             imageRes = R.drawable.hojaldre,
-            rawVideoName = "video_hojaldre"
+            rawVideoName = "video_hojaldre",
+            videoUrl = "https://youtu.be/1yv3Kb7KdEk"
         ),
         ContentItem(
-            id = "video-decoracion",
+            id = "video-leche",
             type = ContentType.Video,
-            category = "Pastelería de vitrina",
-            title = "Decoración de vitrina con manga",
-            description = "Usos de las boquillas más comunes para acabados profesionales en tortas individuales.",
-            meta = "Pastelería · 10 min",
-            imageRes = R.drawable.pasteleria,
-            rawVideoName = "video_decoracion"
+            category = "Productos de horneo",
+            title = "Leche asada",
+            description = "Prepara una leche asada clásica,con su caramelo dorado y textura suave, horneada a baño María. Un postre simple y rentable para tu vitrina.",
+            meta = "Productos de horneo · 10 min",
+            imageRes = R.drawable.leche_asada,
+            rawVideoName = "video_decoracion",
+            videoUrl="https://youtu.be/-tH8LKMzGN0"
         ),
         ContentItem(
-            id = "video-ganache",
+            id = "video-helado",
             type = ContentType.Video,
-            category = "Chocolatería",
-            title = "Ganache perfecta: proporciones y usos",
-            description = "Cómo ajustar la proporción de chocolate y crema según el uso: relleno, cobertura o trufa.",
-            meta = "Chocolatería · 9 min",
-            imageRes = R.drawable.chocolate,
-            rawVideoName = "video_ganache"
+            category = "Gelato",
+            title = "Gelato, helado artesanal frutos del bosque",
+            description = "Aprende a peparar un gelato artesanal de frutos del bosque, cremoso y de color intenso, ideal para ofrecer en tu heladeria o vitrina.",
+            meta = "Gelateria · 30 min",
+            imageRes = R.drawable.helado_artesanal,
+            rawVideoName = "video_gelato",
+            videoUrl = "https://youtu.be/R2N_oOG0xI8"
         ),
+        ContentItem(
+            id = "video-torta-avellana",
+            type = ContentType.Video,
+            category = "Chocolateria",
+            title = "Torta Chocolate Avellana",
+            description = "Arma y decora una torta de chocolte con avellana usando Caravella deco con un acabado brillante listo para vitrina.",
+            meta = "Chocolatería · 10 min",
+            imageRes = R.drawable.avellanas,
+            rawVideoName = "video_avellana",
+            videoUrl = "https://youtu.be/ZwOkabO177M"
+        ),
+        ContentItem(
+            id = "video-mousse-blanco",
+            type = ContentType.Video,
+            category = "Chocolateria",
+            title = "Mousse chocolate blanco",
+            description = "Prepara un mousse aireado de chocolate blanco con ariba, ideal para postres individuales y rellenos de torta.",
+            meta = "Chocolatería · 10 min",
+            imageRes = R.drawable.mousse,
+            rawVideoName = "video_mousse",
+            videoUrl = "https://youtu.be/-8KFtkMyntY"
+        ),
+        ContentItem(
+            id = "video-tips-chocolate",
+            type = ContentType.Video,
+            category = "Chocolateria",
+            title = "Tips y Usos del chocolate",
+            description = "Una chef explica como derretir, temperar y usar el chocolate en distintas preparaciones sin que se queme o pierda el brillo.",
+            meta = "Chocolatería · 10 min",
+            imageRes = R.drawable.tips_chocolate,
+            rawVideoName = "video_tips",
+            videoUrl = "https://youtu.be/v_WinlHRQt0"
+        ),
+        ContentItem(
+            id = "video-royal",
+            type = ContentType.Video,
+            category = "masas para hoja",
+            title = "royale para quiches",
+            description = "Aprende a preparar mini quiches de masa quebrada con relleno de queso y verduras.",
+            meta = "masas de hoja · 15 min",
+            imageRes = R.drawable.royale,
+            rawVideoName = "video_tips",
+            videoUrl = "https://youtu.be/7i2UkZ0AHMg"
+        ),
+
+
 
         // ---------------- CURSOS ----------------
         ContentItem(
-            id = "curso-chocolateria",
+            id = "curso-gelatos",
             type = ContentType.Course,
-            category = "Chocolatería",
-            title = "Fundamentos de chocolatería",
-            description = "Aprende a trabajar el chocolate: tipos de cobertura, templado y ganache para tu negocio.",
-            meta = "3 lecciones · 29 min",
-            imageRes = R.drawable.chocolate,
-            lessonIds = listOf("video-templado", "video-ganache", "video-decoracion"),
-            level = "Nivel inicial"
+            category = "Gelatos",
+            title = "Fundamentos de gelatos",
+            description = "Aprende a trabajar el gelato: tipos de cobertura, templado y ganache para tu negocio.",
+            meta = "1 lecciones · 30 min",
+            imageRes = R.drawable.helado,
+            lessonIds = listOf("video-helado"),
+            level = "Nivel principiante"
         ),
         ContentItem(
             id = "curso-masas",
@@ -191,9 +244,9 @@ object ContentCatalog {
             category = "Masas de hoja",
             title = "Masas de hoja y bollería",
             description = "Domina el laminado y obtén productos de bollería con volumen y capas uniformes.",
-            meta = "2 lecciones · 22 min",
+            meta = "2 lecciones · 25 min",
             imageRes = R.drawable.hojaldre,
-            lessonIds = listOf("video-hojaldre", "video-decoracion"),
+            lessonIds = listOf("video-hojaldre", "video-royal"),
             level = "Nivel intermedio"
         ),
         ContentItem(
@@ -202,11 +255,23 @@ object ContentCatalog {
             category = "Pastelería de vitrina",
             title = "Pastelería de vitrina para emprendedores",
             description = "Ideas y técnicas para armar una vitrina atractiva, rentable y de alta rotación.",
-            meta = "2 lecciones · 19 min",
+            meta = "3 lecciones · 30 min",
             imageRes = R.drawable.pasteleria,
-            lessonIds = listOf("video-decoracion", "video-ganache"),
+            lessonIds = listOf("video-queque", "video-leche","video-helado"),
             level = "Nivel inicial"
-        )
+        ) ,
+        ContentItem(
+            id = "curso-chocolates",
+            type = ContentType.Course,
+            category = "Chocolateria",
+            title = "Chocolateria",
+            description = "Ideas y técnicas para armar una vitrina atractiva, rentable y de alta rotación.",
+            meta = "3 lecciones · 30 min",
+            imageRes = R.drawable.chocolala,
+            lessonIds = listOf("video-torta-avellana", "video-mousse-blanco","video-tips-chocolate"),
+            level = "Nivel intermedio"
+        ),
+
     )
 
     private val byId = items.associateBy { it.id }
