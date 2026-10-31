@@ -1,6 +1,6 @@
-package com.example.mastermartini.ui.screens.profile
+package com.example.proyectomastermartini.ui.screens.profile
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.mastermartini.ui.theme.MasterMartiniTheme
+import com.example.proyectomastermartini.ui.theme.MasterMartiniTheme
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -65,19 +65,19 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.mastermartini.model.ContentCatalog
-import com.example.mastermartini.ui.components.AppTextField
-import com.example.mastermartini.ui.components.AppTopBar
-import com.example.mastermartini.ui.components.ChipSelector
-import com.example.mastermartini.ui.components.ConfirmDialog
-import com.example.mastermartini.ui.components.DropdownField
-import com.example.mastermartini.ui.components.PrimaryButton
-import com.example.mastermartini.ui.components.SectionHeader
-import com.example.mastermartini.ui.components.UserAvatar
-import com.example.mastermartini.ui.theme.MartiniSuccess
-import com.example.mastermartini.util.LocationHelper
-import com.example.mastermartini.util.PhotoStorage
-import com.example.mastermartini.viewmodel.ProfileViewModel
+import com.example.proyectomastermartini.model.ContentCatalog
+import com.example.proyectomastermartini.ui.components.AppTextField
+import com.example.proyectomastermartini.ui.components.AppTopBar
+import com.example.proyectomastermartini.ui.components.ChipSelector
+import com.example.proyectomastermartini.ui.components.ConfirmDialog
+import com.example.proyectomastermartini.ui.components.DropdownField
+import com.example.proyectomastermartini.ui.components.PrimaryButton
+import com.example.proyectomastermartini.ui.components.SectionHeader
+import com.example.proyectomastermartini.ui.components.UserAvatar
+import com.example.proyectomastermartini.ui.theme.MartiniSuccess
+import com.example.proyectomastermartini.util.LocationHelper
+import com.example.proyectomastermartini.util.PhotoStorage
+import com.example.proyectomastermartini.viewmodel.ProfileViewModel
 import java.io.File
 
 

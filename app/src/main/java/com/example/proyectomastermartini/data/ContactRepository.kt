@@ -1,7 +1,5 @@
-package com.example.mastermartini.data.repository
+package com.example.proyectomastermartini.data
 
-import com.example.mastermartini.data.local.ContactDao
-import com.example.mastermartini.data.local.ContactMessageEntity
 import kotlinx.coroutines.flow.Flow
 
 class ContactRepository(private val dao: ContactDao) {

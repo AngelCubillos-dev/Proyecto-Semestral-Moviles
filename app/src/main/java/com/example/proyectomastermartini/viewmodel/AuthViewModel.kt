@@ -1,4 +1,4 @@
-package com.example.mastermartini.viewmodel
+package com.example.proyectomastermartini.viewmodel
 
 import android.app.Application
 import androidx.compose.runtime.getValue
@@ -6,9 +6,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mastermartini.MasterMartiniApp
-import com.example.mastermartini.data.repository.AuthResult
-import com.example.mastermartini.domain.Validators
+import com.example.proyectomastermartini.MasterMartiniApp
+import com.example.proyectomastermartini.data.AuthResult
+import com.example.proyectomastermartini.domain.Validators
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

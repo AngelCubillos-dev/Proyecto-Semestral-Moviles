@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.components
+package com.example.proyectomastermartini.ui.components
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -11,6 +11,7 @@ import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -26,6 +27,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Pause
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.PlayCircle
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
@@ -47,18 +49,20 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
-import com.example.mastermartini.model.ContentItem
+import com.example.proyectomastermartini.model.ContentItem
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 
 /** Foto de perfil (archivo local) o, si no hay, un círculo con las iniciales. */
 @Composable
-fun UserAvatar(photoPath: String, name: String, size: androidx.compose.ui.unit.Dp, modifier: Modifier = Modifier) {
+fun UserAvatar(photoPath: String, name: String, size: Dp, modifier: Modifier = Modifier) {
     val bitmap by produceState<Bitmap?>(initialValue = null, photoPath) {
         value = if (photoPath.isBlank()) null else withContext(Dispatchers.IO) {
             runCatching {
@@ -107,6 +111,32 @@ fun VideoPlayer(video: ContentItem, modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val rawId = remember(video.rawVideoName) {
         video.rawVideoName?.let { context.resources.getIdentifier(it, "raw", context.packageName) } ?: 0
+    }
+    val uriHandler = LocalUriHandler.current
+    val url = video.videoUrl
+    if (!url.isNullOrBlank()) {
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .aspectRatio(16f / 9f)
+                .clip(MaterialTheme.shapes.medium)
+                .clickable { uriHandler.openUri(url) },
+            contentAlignment = Alignment.Center
+        ) {
+            Image(
+                painter = painterResource(video.imageRes),
+                contentDescription = video.title,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.fillMaxSize()
+            )
+            Icon(
+                Icons.Filled.PlayCircle,
+                contentDescription = "Ver video",
+                tint = Color.White,
+                modifier = Modifier.size(72.dp)
+            )
+        }
+        return
     }
     if (rawId != 0) {
         AndroidView(

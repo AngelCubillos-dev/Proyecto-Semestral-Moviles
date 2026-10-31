@@ -1,9 +1,10 @@
-package com.example.mastermartini.data.local
+package com.example.proyectomastermartini.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+
 
 @Database(
     entities = [UserEntity::class, FavoriteEntity::class, ContactMessageEntity::class],

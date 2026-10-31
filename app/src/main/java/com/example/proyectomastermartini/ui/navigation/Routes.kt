@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.navigation
+package com.example.proyectomastermartini.ui.navigation
 
 object Routes {
     const val LOGIN = "login"

@@ -1,10 +1,11 @@
-package com.example.mastermartini.ui.components
+package com.example.proyectomastermartini.ui.components
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
@@ -241,7 +242,7 @@ fun ChipSelector(
     modifier: Modifier = Modifier,
     error: String? = null
 ) {
-    androidx.compose.foundation.layout.Column(modifier.fillMaxWidth()) {
+    Column(modifier.fillMaxWidth()) {
         FlowRow(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
             verticalArrangement = Arrangement.spacedBy(4.dp)

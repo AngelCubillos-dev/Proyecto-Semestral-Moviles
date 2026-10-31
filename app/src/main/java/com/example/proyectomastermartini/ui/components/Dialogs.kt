@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.components
+package com.example.proyectomastermartini.ui.components
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.Spring
@@ -18,7 +18,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.unit.dp
-import com.example.mastermartini.ui.theme.MartiniSuccess
+import com.example.proyectomastermartini.ui.theme.MartiniSuccess
 
 /** Diálogo de éxito con ícono que aparece con efecto de rebote. */
 @Composable

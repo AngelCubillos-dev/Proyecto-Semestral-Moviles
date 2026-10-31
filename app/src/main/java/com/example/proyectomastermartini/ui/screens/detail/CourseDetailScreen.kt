@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.screens.detail
+package com.example.proyectomastermartini.ui.screens.detail
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateContentSize
@@ -20,6 +20,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material.icons.filled.PlayCircle
 import androidx.compose.material.icons.filled.School
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -36,13 +37,13 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.example.mastermartini.model.ContentCatalog
-import com.example.mastermartini.model.ContentItem
-import com.example.mastermartini.ui.components.AppTopBar
-import com.example.mastermartini.ui.components.EmptyState
-import com.example.mastermartini.ui.components.FavoriteButton
-import com.example.mastermartini.ui.components.SectionHeader
-import com.example.mastermartini.ui.components.TypeBadge
+import com.example.proyectomastermartini.model.ContentCatalog
+import com.example.proyectomastermartini.model.ContentItem
+import com.example.proyectomastermartini.ui.components.AppTopBar
+import com.example.proyectomastermartini.ui.components.EmptyState
+import com.example.proyectomastermartini.ui.components.FavoriteButton
+import com.example.proyectomastermartini.ui.components.SectionHeader
+import com.example.proyectomastermartini.ui.components.TypeBadge
 
 @Composable
 fun CourseDetailScreen(
@@ -104,7 +105,7 @@ fun CourseDetailScreen(
                             AnimatedVisibility(visible = expanded) {
                                 Column(Modifier.padding(top = 10.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                                     Text(lesson.description, style = MaterialTheme.typography.bodyMedium)
-                                    androidx.compose.material3.Button(
+                                    Button(
                                         onClick = { onOpenLesson(lesson.id) },
                                         modifier = Modifier.fillMaxWidth().height(52.dp)
                                     ) {

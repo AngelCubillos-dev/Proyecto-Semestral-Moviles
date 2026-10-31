@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.screens.auth
+package com.example.proyectomastermartini.ui.screens.auth
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.tween
@@ -28,11 +28,11 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.mastermartini.ui.components.AppTextField
-import com.example.mastermartini.ui.components.BrandLogo
-import com.example.mastermartini.ui.components.PasswordField
-import com.example.mastermartini.ui.components.PrimaryButton
-import com.example.mastermartini.viewmodel.AuthViewModel
+import com.example.proyectomastermartini.ui.components.AppTextField
+import com.example.proyectomastermartini.ui.components.BrandLogo
+import com.example.proyectomastermartini.ui.components.PasswordField
+import com.example.proyectomastermartini.ui.components.PrimaryButton
+import com.example.proyectomastermartini.viewmodel.AuthViewModel
 
 /** Ingreso simplificado: logo, dos campos y un botón. Entra con un suave fundido. */
 @Composable

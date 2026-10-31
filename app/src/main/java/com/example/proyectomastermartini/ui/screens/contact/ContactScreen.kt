@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.screens.contact
+package com.example.proyectomastermartini.ui.screens.contact
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.expandVertically
@@ -36,15 +36,15 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.mastermartini.domain.Validators
-import com.example.mastermartini.model.ContentCatalog
-import com.example.mastermartini.ui.components.AppTextField
-import com.example.mastermartini.ui.components.AppTopBar
-import com.example.mastermartini.ui.components.DropdownField
-import com.example.mastermartini.ui.components.PrimaryButton
-import com.example.mastermartini.ui.components.SectionHeader
-import com.example.mastermartini.ui.components.SuccessDialog
-import com.example.mastermartini.viewmodel.ContactViewModel
+import com.example.proyectomastermartini.domain.Validators
+import com.example.proyectomastermartini.model.ContentCatalog
+import com.example.proyectomastermartini.ui.components.AppTextField
+import com.example.proyectomastermartini.ui.components.AppTopBar
+import com.example.proyectomastermartini.ui.components.DropdownField
+import com.example.proyectomastermartini.ui.components.PrimaryButton
+import com.example.proyectomastermartini.ui.components.SectionHeader
+import com.example.proyectomastermartini.ui.components.SuccessDialog
+import com.example.proyectomastermartini.viewmodel.ContactViewModel
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

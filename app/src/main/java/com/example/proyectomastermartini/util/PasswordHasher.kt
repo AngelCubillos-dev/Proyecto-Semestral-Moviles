@@ -1,4 +1,4 @@
-package com.example.mastermartini.util
+package com.example.proyectomastermartini.util
 
 import java.security.MessageDigest
 import java.security.SecureRandom

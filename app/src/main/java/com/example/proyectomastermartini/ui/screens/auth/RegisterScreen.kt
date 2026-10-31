@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.screens.auth
+package com.example.proyectomastermartini.ui.screens.auth
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -29,12 +29,12 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.mastermartini.ui.components.AppTextField
-import com.example.mastermartini.ui.components.AppTopBar
-import com.example.mastermartini.ui.components.FieldMessage
-import com.example.mastermartini.ui.components.PasswordField
-import com.example.mastermartini.ui.components.PrimaryButton
-import com.example.mastermartini.viewmodel.AuthViewModel
+import com.example.proyectomastermartini.ui.components.AppTextField
+import com.example.proyectomastermartini.ui.components.AppTopBar
+import com.example.proyectomastermartini.ui.components.FieldMessage
+import com.example.proyectomastermartini.ui.components.PasswordField
+import com.example.proyectomastermartini.ui.components.PrimaryButton
+import com.example.proyectomastermartini.viewmodel.AuthViewModel
 
 @Composable
 fun RegisterScreen(onBack: () -> Unit, viewModel: AuthViewModel = viewModel()) {

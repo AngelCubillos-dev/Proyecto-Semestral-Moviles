@@ -1,4 +1,6 @@
-package com.example.mastermartini.domain
+package com.example.proyectomastermartini.domain
+
+import kotlin.text.iterator
 
 /**
  * Reglas de validación centralizadas y desacopladas de la UI.

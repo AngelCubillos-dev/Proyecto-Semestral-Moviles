@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.screens.home
+package com.example.proyectomastermartini.ui.screens.home
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
@@ -22,25 +23,20 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.mastermartini.data.local.UserEntity
-import com.example.mastermartini.model.ContentCatalog
-import com.example.mastermartini.model.ContentItem
-import com.example.mastermartini.model.ContentType
-import com.example.mastermartini.ui.components.BrandLogo
-import com.example.mastermartini.ui.components.ContentCard
-import com.example.mastermartini.ui.components.SectionHeader
-import com.example.mastermartini.ui.components.icon
-import com.example.mastermartini.ui.screens.profile.ProfileScreen
-import com.example.mastermartini.ui.theme.MasterMartiniTheme
+import com.example.proyectomastermartini.data.UserEntity
+import com.example.proyectomastermartini.model.ContentCatalog
+import com.example.proyectomastermartini.model.ContentItem
+import com.example.proyectomastermartini.model.ContentType
+import com.example.proyectomastermartini.ui.components.BrandLogo
+import com.example.proyectomastermartini.ui.components.ContentCard
+import com.example.proyectomastermartini.ui.components.SectionHeader
+import com.example.proyectomastermartini.ui.components.icon
+import com.example.proyectomastermartini.ui.theme.MasterMartiniTheme
 
 private fun ContentType.hint() = when (this) {
     ContentType.Recipe -> "Preparaciones paso a paso"

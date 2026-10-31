@@ -1,11 +1,11 @@
-package com.example.mastermartini
+package com.example.proyectomastermartini
 
 import android.app.Application
-import com.example.mastermartini.data.local.AppDatabase
-import com.example.mastermartini.data.repository.ContactRepository
-import com.example.mastermartini.data.repository.FavoriteRepository
-import com.example.mastermartini.data.repository.UserRepository
-import com.example.mastermartini.data.session.SessionManager
+import com.example.proyectomastermartini.data.AppDatabase
+import com.example.proyectomastermartini.data.ContactRepository
+import com.example.proyectomastermartini.data.FavoriteRepository
+import com.example.proyectomastermartini.data.UserRepository
+import com.example.proyectomastermartini.data.SessionManager
 
 /** Contenedor simple de dependencias (evita agregar Hilt en un MVP). */
 class MasterMartiniApp : Application() {

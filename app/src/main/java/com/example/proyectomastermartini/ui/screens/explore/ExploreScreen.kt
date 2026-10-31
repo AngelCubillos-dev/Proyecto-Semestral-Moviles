@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.screens.explore
+package com.example.proyectomastermartini.ui.screens.explore
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.layout.Arrangement
@@ -22,18 +22,19 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
-import com.example.mastermartini.model.ContentItem
-import com.example.mastermartini.model.ContentType
-import com.example.mastermartini.ui.components.AppTopBar
-import com.example.mastermartini.ui.components.ContentCard
-import com.example.mastermartini.ui.components.EmptyState
-import com.example.mastermartini.ui.theme.MasterMartiniTheme
+import com.example.proyectomastermartini.model.ContentItem
+import com.example.proyectomastermartini.model.ContentType
+import com.example.proyectomastermartini.ui.components.AppTopBar
+import com.example.proyectomastermartini.ui.components.ContentCard
+import com.example.proyectomastermartini.ui.components.EmptyState
+import com.example.proyectomastermartini.ui.theme.MasterMartiniTheme
 
 @Composable
 fun ExploreScreen(
@@ -101,7 +102,7 @@ fun ExploreScreen(
                     icon = Icons.Filled.SearchOff,
                     title = "Sin resultados",
                     message = "No encontramos contenido con esa búsqueda. Prueba con otra palabra o quita los filtros.",
-                    action = { androidx.compose.material3.TextButton(onClick = onClear) { Text("Limpiar búsqueda", style = MaterialTheme.typography.labelLarge) } }
+                    action = { TextButton(onClick = onClear) { Text("Limpiar búsqueda", style = MaterialTheme.typography.labelLarge) } }
                 )
             } else {
                 LazyColumn(

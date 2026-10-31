@@ -11,35 +11,31 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.proyectomastermartini.ui.navigation.AppNavigation
+import com.example.proyectomastermartini.ui.theme.MasterMartiniTheme
+import com.example.proyectomastermartini.viewmodel.AppViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MaterialTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Saludo(modifier = Modifier.padding(innerPadding))
+            val appViewModel: AppViewModel = viewModel()
+            val largeText by
+            appViewModel.largeText.collectAsState()
+            MasterMartiniTheme(largeText = largeText) {
+                AppNavigation(appViewModel = appViewModel)
+            }
+
+
+
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Saludo(modifier: Modifier = Modifier) {
-    Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-        Text(text = "Hola, Master Martini", style = MaterialTheme.typography.headlineSmall)
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun SaludoPreview() {
-    MaterialTheme {
-        Saludo()
-    }
-}

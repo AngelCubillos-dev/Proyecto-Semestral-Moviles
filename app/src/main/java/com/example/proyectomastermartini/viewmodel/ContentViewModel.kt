@@ -1,12 +1,12 @@
-package com.example.mastermartini.viewmodel
+package com.example.proyectomastermartini.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mastermartini.MasterMartiniApp
-import com.example.mastermartini.model.ContentCatalog
-import com.example.mastermartini.model.ContentItem
-import com.example.mastermartini.model.ContentType
+import com.example.proyectomastermartini.MasterMartiniApp
+import com.example.proyectomastermartini.model.ContentCatalog
+import com.example.proyectomastermartini.model.ContentItem
+import com.example.proyectomastermartini.model.ContentType
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted

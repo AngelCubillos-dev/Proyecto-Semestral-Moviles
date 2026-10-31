@@ -1,4 +1,4 @@
-package com.example.mastermartini.data.local
+package com.example.proyectomastermartini.data
 
 import androidx.room.Dao
 import androidx.room.Insert

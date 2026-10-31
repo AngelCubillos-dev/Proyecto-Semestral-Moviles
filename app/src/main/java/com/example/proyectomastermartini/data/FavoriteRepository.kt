@@ -1,7 +1,5 @@
-package com.example.mastermartini.data.repository
+package com.example.proyectomastermartini.data
 
-import com.example.mastermartini.data.local.FavoriteDao
-import com.example.mastermartini.data.local.FavoriteEntity
 import kotlinx.coroutines.flow.Flow
 
 class FavoriteRepository(private val dao: FavoriteDao) {

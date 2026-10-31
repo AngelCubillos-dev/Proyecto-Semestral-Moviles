@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.screens.detail
+package com.example.proyectomastermartini.ui.screens.detail
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,12 +15,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.mastermartini.model.ContentItem
-import com.example.mastermartini.ui.components.AppTopBar
-import com.example.mastermartini.ui.components.EmptyState
-import com.example.mastermartini.ui.components.FavoriteButton
-import com.example.mastermartini.ui.components.TypeBadge
-import com.example.mastermartini.ui.components.VideoPlayer
+import com.example.proyectomastermartini.model.ContentItem
+import com.example.proyectomastermartini.ui.components.AppTopBar
+import com.example.proyectomastermartini.ui.components.EmptyState
+import com.example.proyectomastermartini.ui.components.FavoriteButton
+import com.example.proyectomastermartini.ui.components.TypeBadge
+import com.example.proyectomastermartini.ui.components.VideoPlayer
 
 @Composable
 fun VideoDetailScreen(

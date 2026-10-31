@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.navigation
+package com.example.proyectomastermartini.ui.navigation
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
@@ -24,22 +24,22 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.mastermartini.model.ContentCatalog
-import com.example.mastermartini.model.ContentItem
-import com.example.mastermartini.model.ContentType
-import com.example.mastermartini.ui.components.AppBottomBar
-import com.example.mastermartini.ui.screens.auth.LoginScreen
-import com.example.mastermartini.ui.screens.auth.RegisterScreen
-import com.example.mastermartini.ui.screens.contact.ContactScreen
-import com.example.mastermartini.ui.screens.detail.CourseDetailScreen
-import com.example.mastermartini.ui.screens.detail.RecipeDetailScreen
-import com.example.mastermartini.ui.screens.detail.VideoDetailScreen
-import com.example.mastermartini.ui.screens.explore.ExploreScreen
-import com.example.mastermartini.ui.screens.favorites.FavoritesScreen
-import com.example.mastermartini.ui.screens.home.HomeScreen
-import com.example.mastermartini.ui.screens.profile.ProfileScreen
-import com.example.mastermartini.viewmodel.AppViewModel
-import com.example.mastermartini.viewmodel.ContentViewModel
+import com.example.proyectomastermartini.model.ContentCatalog
+import com.example.proyectomastermartini.model.ContentItem
+import com.example.proyectomastermartini.model.ContentType
+import com.example.proyectomastermartini.ui.components.AppBottomBar
+import com.example.proyectomastermartini.ui.screens.auth.LoginScreen
+import com.example.proyectomastermartini.ui.screens.auth.RegisterScreen
+import com.example.proyectomastermartini.ui.screens.contact.ContactScreen
+import com.example.proyectomastermartini.ui.screens.detail.CourseDetailScreen
+import com.example.proyectomastermartini.ui.screens.detail.RecipeDetailScreen
+import com.example.proyectomastermartini.ui.screens.detail.VideoDetailScreen
+import com.example.proyectomastermartini.ui.screens.explore.ExploreScreen
+import com.example.proyectomastermartini.ui.screens.favorites.FavoritesScreen
+import com.example.proyectomastermartini.ui.screens.home.HomeScreen
+import com.example.proyectomastermartini.ui.screens.profile.ProfileScreen
+import com.example.proyectomastermartini.viewmodel.AppViewModel
+import com.example.proyectomastermartini.viewmodel.ContentViewModel
 
 private fun NavHostController.navigateTopLevel(route: String) {
     navigate(route) {

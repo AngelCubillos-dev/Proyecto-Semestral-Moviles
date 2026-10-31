@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.theme
+package com.example.proyectomastermartini.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

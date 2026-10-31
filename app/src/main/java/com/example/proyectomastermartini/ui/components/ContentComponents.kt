@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.components
+package com.example.proyectomastermartini.ui.components
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.Spring
@@ -49,11 +49,12 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.example.mastermartini.R
-import com.example.mastermartini.model.ContentItem
-import com.example.mastermartini.model.ContentType
+import com.example.proyectomastermartini.R
+import com.example.proyectomastermartini.model.ContentItem
+import com.example.proyectomastermartini.model.ContentType
 
 fun ContentType.icon(): ImageVector = when (this) {
     ContentType.Recipe -> Icons.Filled.MenuBook
@@ -262,7 +263,7 @@ fun EmptyState(
             message,
             style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
-            textAlign = androidx.compose.ui.text.style.TextAlign.Center
+            textAlign = TextAlign.Center
         )
         action?.invoke()
     }

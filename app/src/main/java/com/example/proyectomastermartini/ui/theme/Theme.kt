@@ -1,4 +1,4 @@
-package com.example.mastermartini.ui.theme
+package com.example.proyectomastermartini.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Shapes

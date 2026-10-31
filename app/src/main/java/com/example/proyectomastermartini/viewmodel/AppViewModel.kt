@@ -1,10 +1,10 @@
-package com.example.mastermartini.viewmodel
+package com.example.proyectomastermartini.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.mastermartini.MasterMartiniApp
-import com.example.mastermartini.data.local.UserEntity
+import com.example.proyectomastermartini.MasterMartiniApp
+import com.example.proyectomastermartini.data.UserEntity
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

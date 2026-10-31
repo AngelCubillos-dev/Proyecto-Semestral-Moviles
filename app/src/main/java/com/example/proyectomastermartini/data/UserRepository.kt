@@ -1,9 +1,6 @@
-package com.example.mastermartini.data.repository
+package com.example.proyectomastermartini.data
 
-import com.example.mastermartini.data.local.UserDao
-import com.example.mastermartini.data.local.UserEntity
-import com.example.mastermartini.data.session.SessionManager
-import com.example.mastermartini.util.PasswordHasher
+import com.example.proyectomastermartini.util.PasswordHasher
 import kotlinx.coroutines.flow.Flow
 
 sealed interface AuthResult {
